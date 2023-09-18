@@ -1,0 +1,110 @@
+{
+  "particles": {
+    "number": {
+      "value": 180,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#0D0D0D"
+    },
+    "shape": {
+      "type": ["circle","star","polygon", "image"],
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "https://doc-0k-64-docs.googleusercontent.com/docs/securesc/a0lsoqm2lenac69bb44t796se1d16rva/spsonfh8acdcr80b55tu4u15babpii6p/1678201500000/09580221573070212513/03432720131326696836/1tUA8kplF22buBJLLB5hA5uhV58w7Dfa8?ax=AB85Z1D8wNtxIROl4uUJkDf_M19lhdWFfBsY5ieptc6iezDsGkF8iaeSRSAB9s4e18ZjNUMMHvf0lFKvokbD1qLM4vGqtHnkqLfa48syEoAAmUqYwWxWLr2C4O8_9kwj9WKXkJHPAfFVFSygEy3nMAnBOr9ph14y2VKZCXl3YITNJzvGDJj5rEO1ce05RD5xsun3Q2IqPFAUYlzeFo_5jjFGbmaAAicvHpPP30U5p3lgeZNopr0_sgtF7b9KRzWhBGvsZWrz4glOHjY0qWBKFeDzv4rPeAUvcHGQVt_EHsSY0PlgCIX36W2fFUu-G-A9TwKsd3BsZKB58aHp-V02wa7_SZ1tTesfEZ06A48T0zRHXV_ZIcRlL7ZEpYq5qei90bxX82p23ULN0XqtD0NRVskcY_X6CSis9MXDaiG0uZTj-6_YvM7C2vy7b9pKjmyPlOeetQntHPnhKy4b2c84IkrpzJXOEvc7ymLOig11JXG_akcdlQMXrxZDShlF6DSXsmNtollXxUtphs5SKjyBG2SxcWMXjaGnYn1ZyW7ygiSS5b73iMnt5S4z5bX2uWg6fZQdtT2Q7-nLEF2crZE_lYf6fUMlFywhPauilp5bc2-N2YAWmrcgmMfEbBB1e1HulDkOXLCDdQJrUI7uD-eW57O05aALoZ9cqrGOQeVaANz65d_WFLPKEyO9dQAFjUWBXLjoXEsCws8hoLjxbkcvfFrdXa7qXGk8GmsVLLUebqC7OgakaRCrAM1qWYME210m_3erHKLgJvQ54pHqNDUaT3uQS7SZlJ73oTYe_xO4USSgJHA9LkyV_bZ5-E0HVIL9O9mSMwKiqUjiHzvGgfAALpkuOjsZcFFJRgsd81XaNohiM22vlxorgEJNp_bF0A_HHYTlxx5_-9IoNukeVvqzpwxt9jlPJHyIz4rcsmkL0EEEFNSXCjuXt2f7cfmMA5Bd8G68r8s1ob5Zjg&uuid=6d680233-8dde-425b-b296-69ac935e45ae&authuser=0&nonce=3tfaoth431a64&user=03432720131326696836&hash=ds29e1u37utdt545mnbuf9ge0rhdruc5",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 8,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 200,
+      "color": "#4B4573",
+      "opacity": 0.3,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}

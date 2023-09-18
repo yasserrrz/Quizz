@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- icon FontAwesome -->
+    <link rel="stylesheet" href="css/fontAwesome icon/all.css" />
+    <!-- pretty checkBox -->
+    <link rel="stylesheet" href="css/pretty-checkbox.min.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main id="particles-js" class="position-relative">
+      <div class="container position-absolute">
+        <div class="main-titel text-center my-lg-5 my-md-2">
+          <h1>Quiz App</h1>
+        </div>
+        <section
+          id="setting"
+          class="container animate__animated animate__backInUp p-4 rounded-3 shadow-lg"
+        >
+          <h2
+            class="text-capitalize header text-center p-3 border-bottom border-2 border-white"
+          >
+            setting your quiz
+          </h2>
+          <div class="setting-content">
+            <div class="caregory">
+              <h4 class="my-3">Category</h4>
+              <select
+                class="form-select"
+                id="caregory"
+                aria-label="Default select example"
+              >
+                <!-- <option selected>Open this select menu</option> -->
+                <option value="10">One</option>
+                <option value="22">Two</option>
+                <option value="18">Three</option>
+              </select>
+            </div>
+            <div class="difficulty">
+              <h4 class="my-3">Difficulty</h4>
+              <!-- success -->
+              <div class="pretty p-default p-round d-block mb-3">
+                <input type="radio" value="easy" name="difficulty" checked />
+                <div class="state p-primary-o">
+                  <label>Easy</label>
+                </div>
+              </div>
+              <div class="pretty p-default p-round d-block mb-3">
+                <input type="radio" value="medium" name="difficulty" />
+                <div class="state p-success-o">
+                  <label>Medium</label>
+                </div>
+              </div>
+              <div class="pretty p-default p-round d-block mb-3">
+                <input type="radio" value="hard" name="difficulty" />
+                <div class="state p-danger-o">
+                  <label>Hard</label>
+                </div>
+              </div>
+            </div>
+            <div class="amount">
+              <label for="amount" class="text-capitalize fw-bolder my-3 fs-5"
+                >number of qustions</label
+              >
+              <input
+                id="amount"
+                type="number"
+                class="form-control"
+                value=""
+                min="1"
+                max="50"
+              />
+            </div>
+          </div>
+
+          <div class="text-center my-3">
+            <p
+              class="btn subm px-4 rounded-3 bg-dark-subtle text-black"
+              id="start"
+            >
+              <i class="fa-solid fa-location-arrow fa-beat"></i> Start
+            </p>
+          </div>
+
+          <div
+            class="alert alert-danger text-capitalize text-center fs-5 shadow-lg"
+            id="alert"
+          >
+            enter number of qustions
+          </div>
+        </section>
+        <section
+          id="qustions"
+          class="container animate__animated animate__backInUp p-lg-4 py-4 px-2 rounded-3 shadow-lg my-4 d-none"
+        >
+          <div
+            class="text-capitalize header text-center p-3 border-bottom border-2"
+          >
+            <h2>Quiz</h2>
+            <div class="d-flex justify-content-between">
+              <p
+                id="state"
+                class="counter p-2 bg-danger text-white rounded-4 text-capitalize"
+              >
+                wrong
+              </p>
+              <p
+                class="counter p-2 bg-warning rounded-4 text-capitalize text-black"
+                id="qCounter"
+              >
+                <span id="to">1</span> of <span id="of"></span> qustions
+              </p>
+            </div>
+          </div>
+          <div class="exam p-4">
+            <h4 class="m-2" id="qustionTitel">Q: your name?</h4>
+            <div class="p-4" id="showAns"></div>
+          </div>
+
+          <div class="text-center">
+            <p
+              id="submit"
+              class="btn subm px-4 rounded-3 bg-dark-subtle text-black"
+            >
+              <i class="fa-solid fa-location-arrow fa-beat"></i> Submit
+            </p>
+          </div>
+          <div
+            class="alert alert-danger text-center fs-5 shadow-lg mx-4"
+            id="alert2"
+          >
+            <p>Select Answer</p>
+          </div>
+        </section>
+        <section
+          id="grade"
+          class="container animate__animated animate__backInUp p-4 rounded-3 shadow-lg d-none"
+        >
+          <h2
+            class="header text-center p-3 border-bottom border-2 border-white"
+          >
+            FINISH
+          </h2>
+          <div class="score">
+            <h3 class="text-center my-4 fs-1">Score</h3>
+            <h3 id="scoreCount" class="text-center my-5">0</h3>
+          </div>
+          <div class="text-center">
+            <p
+              id="tryAgain"
+              class="btn subm px-4 rounded-3 bg-dark-subtle text-black"
+            >
+              <i class="fa-solid fa-location-arrow fa-beat"></i> Try Again
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

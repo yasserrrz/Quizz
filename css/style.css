@@ -1,0 +1,102 @@
+
+
+body{
+   background-color:#9C92A6;
+}
+main{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    transform: translate3d(0, 0, 0);
+    background-color:#9C92A6;
+
+}
+section{
+   background-color:#2c2a47e8;
+   color: #fff;
+}
+.container{
+    left: 50%;
+    top: 40%;
+    transform: translate(-50% , -40%);
+    /* padding: 100px; */
+}
+/* select{
+   background-color: #4B4573 !important;
+} */
+button{
+   left: 90%;
+}
+#alert{
+   display: none;
+}
+#alert2{
+   display: none;
+}
+#state{
+   display: none;
+}
+.counter{
+   
+   font-weight: 600;
+}
+
+h1 {
+   font-size: 5rem;
+   margin: 1rem 0rem 2rem ;
+    color: transparent;
+    background: linear-gradient(180deg, #5c27d6 60%, #557c93 60%) no-repeat;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 1px #fff;
+    background-size: 100% 180%;
+ 
+    animation: gradient 5s infinite alternate;
+ }
+ @keyframes gradient {
+    0% {
+       transform: rotate(0);
+       background-position-y: 0;
+    }
+    50% {
+       transform: rotate(5deg);
+       background-position-y: 100%;
+    }
+    100% {
+       transform: rotate(-5deg);
+       background-position-y: 0;
+    }
+ }
+
+@media screen and (min-width:1001px ) {
+   button{
+      left: 90%;
+   }
+}
+@media screen and (max-width:1000px) and (min-width:800px) {
+
+   button{
+      left: 88%;
+   }
+}
+@media screen and (max-width:979px) and (min-width:770px) {
+   button{
+      left: 80%;
+   }
+}
+@media screen and (max-width:769px) and (min-width:500px) {
+   button{
+      left: 75%;
+      transform: translate(-75%);
+
+   }
+}
+
+
+@media screen and (max-width:500px) {
+   button{
+      left: 50%;
+      transform: translate(-50%);
+   }
+}
